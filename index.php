@@ -13,13 +13,13 @@
         <label for="">Prodi</label>
         <select name="prodi" id="prodi"  >
         <option value="" selected=""> Pilih Program Studi </option>
-                <option value="IF"> Teknik Informatika </option>
-                <option value="FA"> Farmasi </option>
-                <option value="DKV"> Desain Komunikasi VIsual </option>
-                <option value="EL"> Teknik Elektro </option>
-                <option value="GL"> Teknik Geologi </option>
-                <option value="TIP"> Teknik Industri Pertanian </option>
-                <option value="PWK"> Perencanaan WIlayah Dan Kota </option>
+                <option value="Teknik Informatika"> Teknik Informatika </option>
+                <option value="Farmasi"> Farmasi </option>
+                <option value="Desain Komunikasi Visual"> Desain Komunikasi VIsual </option>
+                <option value="Teknik Elektro"> Teknik Elektro </option>
+                <option value="Teknik Geologi"> Teknik Geologi </option>
+                <option value="Teknik Industri Pertanian"> Teknik Industri Pertanian </option>
+                <option value="Perencanaan Wilayah dan Kota"> Perencanaan WIlayah Dan Kota </option>
           </select>
 
 
@@ -55,7 +55,7 @@
                 var variable = $( "#prodi" ).val();
                 $.ajax
                     ({ 
-                        url: 'data.php',
+                        url: 'tampil.php',
                         data: { prodi : variable},
                         type: 'POST',
                         success: function(data)
